@@ -2953,6 +2953,13 @@
       "url": "https://www.androidpolice.com/i-finally-found-best-android-feature-for-apps-i-open-once-a-year/",
       "publishedAt": "2026-08-18T12:18:56.439Z",
       "signature": "076d6c02cdf30c3a"
+    },
+    {
+      "slug": "linus-torvalds-ai-fix-intel-xe-driver",
+      "title": "Linus Torvalds uses AI to debug an Intel GPU driver bug",
+      "url": "https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c",
+      "publishedAt": "2026-08-23T12:14:15.891Z",
+      "signature": "ba7130f92e21ad57"
     }
   ]
 }
