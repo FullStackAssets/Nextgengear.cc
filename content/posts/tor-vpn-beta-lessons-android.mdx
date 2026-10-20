@@ -1,0 +1,52 @@
+---
+title: "Tor VPN Beta review: Lessons from building an Android‑only VPN from scratch"
+description: "Tor VPN Beta brings device‑wide Tor protection to Android, isolating each app on its own circuit. Learn the key takeaways from its beta launch."
+date: "2026-10-20T12:01:01.359Z"
+category: "mobile"
+tags: 
+  - "tor"
+  - "vpn"
+  - "android"
+  - "privacy"
+  - "censorship"
+hero: 
+  url: "https://live.staticflickr.com/8315/8028388370_f314ab9e2f.jpg"
+  alt: "GetDownGetEncrypted"
+  credit: "kencf0618"
+  creditUrl: "https://www.flickr.com/photos/30801900@N00/8028388370"
+sources: 
+  - title: "Tor VPN Beta: What we've learned building our own VPN for Android from scratch"
+    url: "https://blog.torproject.org/tor-vpn-beta/"
+  - title: "Tor VPN Beta: What we've learned building our own VPN for Android from scratch | Tor Project"
+    url: "https://blog.torproject.org/tor-vpn-beta/"
+---
+
+When the Tor Project unveiled Tor VPN Beta for Android, it marked the first time the organization offered device‑level network protection beyond its browser. Built from the ground up, the app routes each installed application through its own Tor circuit, promising isolation that commercial VPNs don’t provide. Early users quickly gravitated toward the app’s ability to unblock censored sites, turning the beta into a real‑world test of circumvention. The launch also revealed practical challenges around exit node selection and performance. Understanding these lessons helps anyone weighing Tor‑based privacy tools against traditional VPNs.
+<Callout type="takeaway">Tor VPN Beta proves per‑app Tor circuits can unblock censored content while preserving privacy.</Callout>
+## What happened
+The Tor team began development after repeated user research indicated a demand for device‑wide anonymity on Android, a platform most affected by state‑level censorship. A limited beta released last fall let real users test per‑app routing, and the most common use case that emerged was bypassing blocked websites and services. The feedback loop forced the team to prioritize a searchable Apps screen and streamlined circuit management.
+In parallel, engineers experimented with giving users granular exit‑node control, a feature common in commercial VPNs. Usability testing showed that most users found the option confusing and that incorrect exits could worsen censorship, so the feature was pared back in favor of automatic, region‑aware exit selection.
+## Why it matters
+By isolating each app on its own Tor circuit, Tor VPN Beta reduces cross‑tracking risks that persist with single‑tunnel VPNs, offering a stronger privacy guarantee for activists, journalists, and everyday users in restrictive regimes. Because the app leverages the public Tor network, it avoids the data‑logging practices of many paid VPN services, but it also inherits Tor’s latency and bandwidth constraints, which can affect streaming or gaming. The beta’s real‑world usage demonstrates that a free, open‑source VPN can serve as a viable circumvention tool, reshaping how privacy‑focused users think about mobile security.
+<ProsCons>
+  <Pros>
+    <li>Per‑app circuit isolation prevents cross‑app tracking.</li>
+    <li>Runs on the free, volunteer‑run Tor network with no logging.</li>
+    <li>Designed specifically for Android users in censored regions.</li>
+  </Pros>
+  <Cons>
+    <li>Higher latency and lower throughput compared to commercial VPNs.</li>
+    <li>Limited manual exit‑node selection can frustrate power users.</li>
+    <li>Beta status means occasional bugs and incomplete feature set.</li>
+  </Cons>
+</ProsCons>
+## How to think about it
+If you need reliable device‑wide anonymity for browsing, messaging, or accessing blocked content, Tor VPN Beta is a strong first choice—especially if you value open‑source software and zero‑log policies. Pair it with a trusted Wi‑Fi network to mitigate speed loss, and avoid using it for latency‑sensitive tasks like video calls unless performance is acceptable. Keep the app updated, and be prepared to switch exits manually only if a specific region is required for access.
+<BuyBox product="Tor VPN Beta" />
+<Callout type="warning">Expect slower speeds and occasional connection drops; the app is still in beta and may not support all streaming services.</Callout>
+## FAQ
+<FAQ>
+  <Question q="Can Tor VPN Beta replace a regular VPN for streaming?">Tor VPN Beta provides strong privacy but its bandwidth is lower than most commercial VPNs, so streaming may buffer or downgrade in quality.</Question>
+  <Question q="How does per‑app circuit isolation work?">Each installed app is assigned its own Tor circuit, so traffic from one app never shares the same exit node with another, preventing correlation.</Question>
+  <Question q="Is my data still logged by any third party?">The Tor network is designed to avoid logging; Tor VPN Beta does not keep usage logs, though exit relays are operated by volunteers and can see unencrypted traffic.</Question>
+</FAQ>
