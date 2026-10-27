@@ -2995,6 +2995,20 @@
       "url": "https://blog.torproject.org/tor-vpn-beta/",
       "publishedAt": "2026-10-20T12:01:01.363Z",
       "signature": "a6993d0af246874c"
+    },
+    {
+      "slug": "underfunded-php-core-2026-vulnerability",
+      "title": " Lack of funding likely led to the recent PHP security snafu, but that's just the tip of the iceberg ",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/lack-of-funding-likely-led-to-the-recent-php-security-snafu-but-thats-just-the-tip-of-the-iceberg-a-dreary-situation-caused-by-services-running-old-versions-with-no-support",
+      "publishedAt": "2026-10-26T12:00:38.910Z",
+      "signature": "9b82ea8c7c461803"
+    },
+    {
+      "slug": "best-laptop-deals-under-500",
+      "title": "Today’s best laptop deals: Save big on work, school, home use, and gaming",
+      "url": "https://www.pcworld.com/article/550968/best-laptop-deals-3.html",
+      "publishedAt": "2026-10-27T12:02:18.454Z",
+      "signature": "a14647ec919633cb"
     }
   ]
 }
