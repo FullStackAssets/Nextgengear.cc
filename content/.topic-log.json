@@ -3037,6 +3037,13 @@
       "url": "https://www.androidpolice.com/quick-android-auto-setup-saved-road-trips-more-than-once/",
       "publishedAt": "2026-11-07T12:00:24.887Z",
       "signature": "225d9cc8bd36e13f"
+    },
+    {
+      "slug": "ghostmap-android-crash-loop-vulnerability",
+      "title": "GhostMap: The Android flaw that crashes your phone before you open the app",
+      "url": "https://www.bitdefender.com/en-us/blog/labs/ghostmap-android",
+      "publishedAt": "2026-11-08T12:00:24.575Z",
+      "signature": "78d2d8c52ee8ee2e"
     }
   ]
 }
