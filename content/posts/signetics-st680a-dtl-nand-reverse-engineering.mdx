@@ -1,0 +1,59 @@
+---
+title: "Inside the 1965 Signetics ST680A: How DTL NAND Gates Were Built"
+description: "A look at the reverse‑engineered ST680A DTL NAND chip, its construction and why vintage logic matters."
+date: "2026-11-10T12:00:46.028Z"
+category: "news"
+tags: 
+  - "vintage"
+  - "reverse-engineering"
+  - "dtl"
+  - "ic"
+  - "signetics"
+hero: 
+  url: ""
+  alt: ""
+  credit: ""
+  creditUrl: ""
+sources: 
+  - title: "Reverse engineering a vintage diode-transistor logic chip"
+    url: "http://www.righto.com/2026/11/signetics-st680a-dtl-nand.html"
+  - title: "Reverse engineering a vintage diode-transistor logic chip"
+    url: "http://www.righto.com/2026/11/signetics-st680a-dtl-nand.html"
+---
+
+CuriousMarc stumbled upon an unmarked DIP IC while sifting through a vintage parts collection. After decapping the epoxy package with hot air and a brief acid rinse, the die revealed a four‑gate NAND implemented in diode‑transistor logic. The chip was identified as the Signetics ST680A, part of the 1965 600 series—the first plastic‑DIP family. Understanding its construction sheds light on early integrated‑circuit design and offers a hands‑on lesson for modern hobbyists. The find also highlights how fragile historic hardware can be when opened.
+
+<Callout type="takeaway">The ST680A demonstrates how simple DTL circuitry powered the first plastic‑DIP NAND gates.</Callout>
+
+## What happened
+The ST680A is a four‑NAND‑gate chip fabricated with diode‑transistor logic, a technique that predates modern CMOS. Its plastic DIP package, introduced by Signetics in late 1965, replaced earlier metal cans and ceramic packs, making mass production cheaper and board layout simpler. CuriousMarc opened the chip using a hot‑air decapper, then cleaned residual epoxy with a few drops of boiling sulfuric acid to expose the silicon die and bond wires.
+
+Microscopic inspection showed the classic DTL layout: input diodes feeding a common transistor that pulls the output low only when all inputs are high. The four gates share a common bias network, illustrating how designers maximized functionality with minimal components. The article documents each transistor, diode, and resistor, confirming the chip’s operation as a true NAND array.
+
+## Why it matters
+Revealing the ST680A’s internals bridges a gap between early IC engineering and today’s hobbyist practices. It illustrates the evolution from discrete diode‑transistor stages to integrated CMOS, helping enthusiasts appreciate the trade‑offs in speed, power, and layout that shaped modern chips. Moreover, the reverse‑engineering process showcases safe, reproducible techniques for opening epoxy‑encapsulated parts—knowledge that can rescue other obscure vintage components from obscurity.
+
+<ProsCons>
+  <Pros>
+    <li>Shows how simple components achieved complex logic before CMOS.</li>
+    <li>Provides a tangible example of early plastic‑DIP packaging.</li>
+    <li>Demonstrates a repeatable decapping method for hobbyists.</li>
+  </Pros>
+  <Cons>
+    <li>DTL is slower and consumes more power than modern logic families.</li>
+    <li>Epoxy decapping requires careful handling of hazardous chemicals.</li>
+    <li>Documentation is scarce, making verification difficult.</li>
+  </Cons>
+</ProsCons>
+
+## How to think about it
+When approaching a vintage IC, start by documenting its package and pinout before attempting any physical opening. Use a low‑temperature hot‑air tool to soften the epoxy, then clean the die with minimal acid—just enough to remove residue without damaging the silicon. Photograph each step, then map visible structures to known DTL schematics. Finally, compare your observations against historical data to confirm functionality, and consider replicating the circuit on a breadboard for hands‑on testing.
+
+<Callout type="warning">Handle sulfuric or nitric acid in a well‑ventilated area, wear gloves and eye protection, and dispose of waste responsibly.</Callout>
+
+## FAQ
+<FAQ>
+  <Question q="What tools are needed to decap a plastic DIP IC?">A temperature‑controlled hot‑air station, fine tweezers, a microscope, and a small amount of dilute acid for cleaning are sufficient.</Question>
+  <Question q="Why was diode‑transistor logic used instead of early MOS?">DTL was easier to fabricate with the semiconductor processes of the early 1960s and offered reliable switching despite higher power consumption.</Question>
+  <Question q="Can the ST680A be used in modern projects?">Functionally it works, but its speed and power draw make it impractical compared to contemporary CMOS NAND gates.</Question>
+</FAQ>

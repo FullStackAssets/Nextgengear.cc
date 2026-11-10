@@ -3044,6 +3044,13 @@
       "url": "https://www.bitdefender.com/en-us/blog/labs/ghostmap-android",
       "publishedAt": "2026-11-08T12:00:24.575Z",
       "signature": "78d2d8c52ee8ee2e"
+    },
+    {
+      "slug": "signetics-st680a-dtl-nand-reverse-engineering",
+      "title": "Reverse engineering a vintage diode-transistor logic chip",
+      "url": "http://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
+      "publishedAt": "2026-11-10T12:00:46.032Z",
+      "signature": "bef530fa127e43f5"
     }
   ]
 }
