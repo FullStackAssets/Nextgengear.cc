@@ -3051,6 +3051,13 @@
       "url": "http://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
       "publishedAt": "2026-11-10T12:00:46.032Z",
       "signature": "bef530fa127e43f5"
+    },
+    {
+      "slug": "baochip-1x-open-22nm-riscv-soc",
+      "title": "Hello Baochip",
+      "url": "https://ratfactor.com/cards/hello-baochip",
+      "publishedAt": "2026-11-12T12:00:34.853Z",
+      "signature": "dc697e5d82f9e3f4"
     }
   ]
 }

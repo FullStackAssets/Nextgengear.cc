@@ -1,0 +1,52 @@
+---
+title: "Baochip-1x: Open 22nm RISC‑V SoC with MMU and hardware security features"
+description: "The Baochip-1x is a mostly‑open 22nm RISC‑V SoC featuring an MMU, TRNG, AES and IR‑inspectable layout for high‑assurance applications."
+date: "2026-11-12T12:00:34.852Z"
+category: "news"
+tags: 
+  - "baochip"
+  - "riscv"
+  - "open-hardware"
+  - "security"
+  - "embedded"
+hero: 
+  url: ""
+  alt: ""
+  credit: ""
+  creditUrl: ""
+sources: 
+  - title: "Hello Baochip"
+    url: "https://ratfactor.com/cards/hello-baochip"
+  - title: "Hello Baochip! - ratfactor"
+    url: "https://ratfactor.com/cards/hello-baochip"
+---
+
+The open‑hardware community got a fresh boost on November 12 when Andrew “bunnie” Huang announced the Baochip‑1x, a 22 nm RISC‑V system‑on‑chip now available through Crowd Supply. The chip ships with an on‑chip MMU, true‑random number generator, AES engine and a suite of cryptographic hash units, all packaged in a layout that can be inspected with a low‑cost infrared camera. It is designed to run Xous, a Rust‑based microkernel OS originally built for Bunnie’s Precursor board. By exposing traditionally “real‑computer” features in a tiny, inspectable silicon die, Baochip‑1x promises new possibilities for high‑assurance embedded devices.
+<Callout type="takeaway">Baochip‑1x brings desktop‑class memory management and built‑in security to an open, inspectable RISC‑V SoC.</Callout>
+## What happened
+On 2026‑11‑12 the Baochip‑1x was listed on Crowd Supply, and early adopters reported receiving the Dabao board that houses the chip. The SoC is fabricated in a 22 nm process and includes a memory‑management unit (MMU) that enables virtual memory, a feature rarely found in low‑power embedded silicon.
+In addition to the MMU, the chip integrates a true‑random number generator, AES encryption accelerator and multiple cryptographic hash units, all exposed through a transparent hardware interface. Its layout is deliberately IR‑transparent, allowing users to verify transistor placement with inexpensive infrared cameras, a design choice highlighted in Bunnie’s IRIS inspection documentation.
+## Why it matters
+The inclusion of an MMU and hardware security blocks lowers the barrier for developers to build tamper‑resistant, formally verified systems without resorting to proprietary silicon. It also aligns with the growing demand for open‑source hardware in regulated sectors such as aerospace, medical devices and critical infrastructure, where auditability is a legal requirement.
+<ProsCons>
+  <Pros>
+    <li>Fully open‑source hardware design files.</li>
+    <li>On‑chip MMU enables virtual memory for complex OSes.</li>
+    <li>Built‑in TRNG, AES and hash units simplify secure boot and encryption.</li>
+  </Pros>
+  <Cons>
+    <li>Early‑stage production; limited stock and longer lead times.</li>
+    <li>Software ecosystem still maturing—Xous is the primary supported OS.</li>
+    <li>IR‑inspection requirement adds a small tooling cost for compliance.</li>
+  </Cons>
+</ProsCons>
+## How to think about it
+If you are evaluating Baochip‑1x for a new product, start by mapping your security requirements to the on‑chip primitives (TRNG, AES, hash) and decide whether you need virtual memory. Verify that your firmware stack can run Xous or port another Rust‑based microkernel; the existing README files provide a solid migration path. Finally, budget for a simple IR camera and allocate time for silicon‑level inspection if compliance audits are part of your roadmap.
+<BuyBox product="Baochip-1x" />
+<Callout type="warning">Availability is limited and software support is still evolving; plan for longer development cycles.</Callout>
+## FAQ
+<FAQ>
+  <Question q="Can Baochip-1x run Linux?">While the MMU makes Linux technically possible, the current software stack focuses on the Xous microkernel, and a full Linux port is not yet officially supported.</Question>
+  <Question q="Do I need special equipment to inspect the chip?">A modest infrared camera (often under $50) is sufficient to perform the IR‑based layout verification that the design encourages.</Question>
+  <Question q="Is Xous required to use the chip?">Xous is the reference operating system and provides drivers for all hardware features, but developers can port other Rust‑based kernels if they prefer.</Question>
+</FAQ>
