@@ -1,0 +1,63 @@
+---
+title: "Running a UK Law Firm on Debian: 2026 Update on the ThinkPad X1 Yoga Gen 6"
+description: "Learn how a small UK law firm uses Debian on a ThinkPad X1 Yoga Gen 6, with Thunderbird, LibreOffice, and open‑source tools for daily practice."
+date: "2026-11-14T12:00:30.247Z"
+category: "mobile"
+tags: 
+  - "debian"
+  - "thinkpad"
+  - "linux"
+  - "open-source"
+  - "productivity"
+hero: 
+  url: "https://live.staticflickr.com/2752/4443650875_461e341f4d_b.jpg"
+  alt: "thinkpad hostap"
+  credit: "clemens.duerrschmidt"
+  creditUrl: "https://www.flickr.com/photos/17869270@N05/4443650875"
+sources: 
+  - title: "Running a law firm on Free software (2026 edition)"
+    url: "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/"
+  - title: "Running a law firm on Free software (2026 edition)"
+    url: "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/"
+---
+
+Neil Brown decided to run his boutique UK law firm entirely on free software, choosing a familiar workhorse: a Lenovo ThinkPad X1 Yoga Gen 6 paired with Debian GNU/Linux. Five years after his first public account, the 2026 update shows how the laptop and open‑source stack handle client emails, document production, and daily casework. The setup proves that a high‑end convertible can power a professional practice without proprietary OS or office suites. But hardware quirks and occasional software hiccups remind firms to weigh reliability against cost savings.
+
+<Callout type="takeaway">A Debian‑based ThinkPad can run a modern law firm, but hardware reliability remains a critical factor.</Callout>
+
+## What happened
+Brown continues to run Debian with the GNOME desktop on his primary machine, a ThinkPad X1 Yoga Gen 6. The convertible’s 2‑in‑1 design lets him fold the screen back and use the active pen for annotating contracts directly on the device.
+
+For email, he relies on Thunderbird with the Quick Folder Move and Move Message And Yourself extensions, and on mutt for terminal‑based handling. Calendar invites sometimes glitch in Thunderbird, so he falls back to ikhal. Document creation is done in LibreOffice Writer for Word‑compatible files, while markdown drafts are edited in vim and converted via pandoc and Typst, with plans to experiment with TeX for clients who prefer diffable source.
+
+Recently the laptop’s Thunderbolt/USB‑C ports have become flaky for data transfer, though they still charge reliably, prompting Brown to consider a replacement.
+
+## Why it matters
+Brown’s experience shows that law firms can cut licensing costs and gain greater data control by adopting a fully free‑software stack, a compelling argument for firms wary of vendor lock‑in. The ability to annotate documents on a convertible streamlines review workflows, while open‑source tools like LibreOffice and Typst meet most court‑required formats. However, the hardware reliability issue underscores that free software adoption alone isn’t enough; firms must also vet the durability of their devices to avoid disruptions that could affect client service.
+
+<ProsCons>
+  <Pros>
+    <li>No licensing fees for OS or office suite.</li>
+    <li>Full control over data privacy and encryption.</li>
+    <li>Convertible form factor aids document annotation.</li>
+  </Pros>
+  <Cons>
+    <li>Thunderbolt/USB‑C data instability on the current laptop.</li>
+    <li>Thunderbird calendar bugs require workarounds.</li>
+    <li>Linux desktop may need extra configuration for niche legal software.</li>
+  </Cons>
+</ProsCons>
+
+## How to think about it
+Evaluate hardware reliability first: test the laptop’s ports and consider a model with proven data‑transfer stability. Map your essential legal software to open‑source equivalents and verify compatibility before full migration. Implement regular encrypted backups and a fallback device strategy to mitigate downtime. Finally, allocate time for staff training on tools like mutt, ikhal, and Typst to ensure smooth adoption.
+
+<BuyBox product="ThinkPad X1 Yoga Gen 6" />
+
+<Callout type="warning">The current ThinkPad’s flaky Thunderbolt/USB‑C ports can cause data‑transfer failures; ensure you have a reliable backup and consider a replacement if stability is critical.</Callout>
+
+## FAQ
+<FAQ>
+  <Question q="Can I use Debian for confidential client data?">Yes; Debian supports full‑disk encryption, SELinux/AppArmor policies, and regular security updates, making it suitable for handling sensitive legal information when properly configured.</Question>
+  <Question q="Is LibreOffice sufficient for court‑required Word documents?">LibreOffice Writer can open and save .docx files with high fidelity, and most courts accept documents produced this way, though a quick verification against the original is advisable.</Question>
+  <Question q="What alternatives exist if the ThinkPad’s ports fail?">Consider a USB‑C hub with dedicated data lanes, a separate external SSD for transfers, or a replacement laptop such as the ThinkPad X1 Carbon, which offers more reliable ports.</Question>
+</FAQ>
